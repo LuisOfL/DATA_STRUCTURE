@@ -1,5 +1,6 @@
-#include"..\ArBin\ArBin.h"
+#include"../ArBin/ArBin.h"
 typedef ArBin DicBin;
+
 
 DicBin InsOrd(Elem e, DicBin a){
      if(esvacioAB(a))
@@ -19,6 +20,7 @@ int EstaEn(Elem e, DicBin a){
               else
                 return EstaEn(e,derAB(a));
 }
+
 
 Elem Mayor(DicBin a){
     if(EsHoja(a))

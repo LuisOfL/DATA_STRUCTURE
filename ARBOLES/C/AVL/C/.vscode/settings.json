@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "time.h": "c",
+        "stdlib.h": "c",
+        "arbin.h": "c",
+        "elemstr.h": "c",
+        "stdio.h": "c",
+        "avl.h": "c",
+        "dicbin.h": "c"
+    }
+}

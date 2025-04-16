@@ -15,4 +15,6 @@ int EsMayor(Elem e1, Elem e2){
 int SonIguales(Elem e1, Elem e2){
     return strcmp(e1,e2)==0;
 }
-
+int EsMenor(Elem e1, Elem e2) {
+    return strcmp(e1, e2) < 0; 
+}

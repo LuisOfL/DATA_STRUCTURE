@@ -1,4 +1,4 @@
-#include"..\DicBin\DicBin.h"
+#include"../DicBin/DicBin.h"
 typedef DicBin AVL;
 
 int ABS(int n){

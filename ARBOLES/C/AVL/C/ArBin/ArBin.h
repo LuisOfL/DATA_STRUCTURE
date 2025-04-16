@@ -42,20 +42,25 @@ int Altura(ArBin a){
 }
 
 
-void ImpNivelAB(ArBin a, int nivel){
+void ImpNivelAB(ArBin a, int nivel) {
     if (esvacioAB(a))
         return;
-    if (nivel == 1)
+    if (nivel == 1) {
+        // Imprime la raíz sin sangría adicional
         ImpElem(raiz(a));
-    else if (nivel > 1){
-        ImpNivelAB(izqAB(a), nivel-1);
-        ImpNivelAB(derAB(a), nivel-1);
+    } else if (nivel > 1) {
+        // Imprimir primero el subárbol izquierdo y luego el derecho, con una sangría controlada
+        ImpNivelAB(izqAB(a), nivel - 1);
+        ImpNivelAB(derAB(a), nivel - 1);
     }
 }
-void ImpNivelPorNivelAB(ArBin a){
-    int h = Altura(a),i;
-    for (i=1; i<=h; i++){
-        ImpNivelAB(a, i);
+
+void ImpNivelPorNivelAB(ArBin a) {
+    int h = Altura(a), i;
+    for (i = 1; i <= h; i++) {
+        // Indicar claramente el nivel que se está imprimiendo
+        printf("Nivel %d: ", i);
+        ImpNivelAB(a, i);  // Imprimir los elementos del nivel 'i'
         printf("\n");
     }
 }
